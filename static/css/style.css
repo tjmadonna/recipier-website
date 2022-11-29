@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: -apple-system, system-ui, Verdana, sans-serif;
+}
+
+p {
+  font-family: -apple-system, system-ui, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-padding {
+  flex-grow: 2;
+}
+
+.intro {
+  margin: 0 auto;
+  padding: 1em;
+  padding-top: 10em;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.intro__img {
+  max-width: 300px;
+}
+
+.intro__content {
+  text-align: center;
+}
+
+.intro__content--appicon {
+  width: 100px;
+}
+
+.intro__content--badge {
+  height: 50px;
+  margin: 1em;
+}
+
+.contact {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.contact-container {
+  max-width: 1000px;
+  height: 100%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.contact-container div {
+  margin: 1em;
+}
+
+.contact-container a {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  color: #fbfcd4;
+}
+
+.contact-container a:focus {
+  color: #fbfcd4;
+}
+
+.privacy {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.privacy--text {
+  line-height: 1.5;
+}
+
+.privacy--text li {
+  font-family: -apple-system, system-ui, Verdana, sans-serif;
+  margin: 0 0 0.3em 0;
+}
+
+@media (min-width: 600px) {
+  /* Large screen */
+
+  .intro {
+    max-width: 1000px;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  .intro__content--badge {
+    height: 72px;
+  }
+}
